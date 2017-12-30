@@ -1,1 +1,8 @@
 git use test!
+
+
+## 检查当前文件状态
+$ git status
+
+## 撤销修改
+$ git checkout -- <filename>
