@@ -6,3 +6,6 @@ $ git status
 
 ## 撤销修改
 $ git checkout -- <filename>
+
+## 跳过暂存区 提交
+$ git commit -a 
