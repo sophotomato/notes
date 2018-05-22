@@ -9,3 +9,12 @@ $ git checkout -- <filename>
 
 ## 跳过暂存区 提交
 $ git commit -a 
+
+
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sophotomato/sophotomato.github.io.git
+git push -u origin master
