@@ -1,0 +1,4 @@
+- git clone http://github.com/sophotomato/sophotomato.github.io.git
+- git add .
+- git commit -m 'commit content'
+- git push
