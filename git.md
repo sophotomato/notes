@@ -1,15 +1,16 @@
-$ git config -l	//查看配置信息
-$ git config --global user.name "sophotomato"	//设置全局user name
-$ git config --global user.email johndoe@example.com
+# git基本操作
+$ git config -l	//查看配置信息  
+$ git config --global user.name "sophotomato"	//设置全局user name  
+$ git config --global user.email johndoe@example.com  
 
 ## git仓库初始化
 $ git init
 
 ## 添加跟踪文件，并提交
-$ git add *.c
-$ git add README
-$ git commit -m 'initial project version'
-注：commit提交add内容，包括文件修改和新添加的跟踪文件
+$ git add *.c  
+$ git add README  
+$ git commit -m 'initial project version'  
+注：commit提交add内容，包括文件修改和新添加的跟踪文件  
 
 ## 仓库clone
 $ git clone git://github.com/sophotomato/sophotomato.github.io.git
@@ -40,16 +41,16 @@ $ git diff --staged	//git 1.6.1 or 更改版本
 $ git commit -a
 
 
-# 移除文件
+## 移除文件
 ## 移除删除的文件（以后再也不跟踪这个文件了）
 $ git rm <filename>
 ## 移除add的文件
 $ git rm --cached <filename>
 
-# 移动文件
+## 移动文件
 $ git mv README.txt README
 
-# 查看提交历史
+## 查看提交历史
 $ git log
 ### 常用 -p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新
 $ git log -p -2
@@ -68,3 +69,13 @@ $ git fetch test
 $ git push test master<branch-name>
 ## 远程仓库的删除和重命名
 $ git remote rename test newtest
+
+# branch 相关内容
+## 新建branch
+$ git branch testing
+
+##### HEAD 指向当前所在的分支
+## 切换分支
+$ git checkout testing
+## 删除分支
+$ git branch -d testing
